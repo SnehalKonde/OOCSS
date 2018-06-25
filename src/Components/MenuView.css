@@ -2,28 +2,22 @@
   background-color: #eee;
   border: 3px solid #ccc;
   padding: 5px;
-  width: 130px;
   display: inline-block;
   border-radius: 10px; }
-
-.menu__title {
-  color: #666;
-  font: normal 16px Arial; }
-
-.menu__items {
-  background-color: #fff;
-  border: 2px solid #ccc;
-  border-radius: 10px;
-  list-style-type: none;
-  padding-left: 0px; }
-
-.menu__item {
-  padding: 5px 10px;
-  margin: 5px; }
-
-.menu__item:hover {
-  cursor: pointer; }
-
-.menu__item--selected {
-  background-color: #89bdd3;
-  color: #fff; }
+  .menu__title {
+    color: #666;
+    font: normal 16px Arial; }
+  .menu__items {
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    list-style-type: none;
+    padding-left: 0px; }
+  .menu__item {
+    padding: 5px 10px;
+    margin: 5px; }
+    .menu__item:hover {
+      cursor: pointer; }
+    .menu__item--selected {
+      background-color: #89bdd3;
+      color: #fff; }

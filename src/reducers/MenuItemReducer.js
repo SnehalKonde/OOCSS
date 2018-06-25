@@ -4,6 +4,8 @@ export default (state ={}, action) => {
             return  Object.assign({},state,{MenuItems: action.options });
         case "SET_MENU_ITEMS":
             return  Object.assign({},state,{MenuItems: action.options });
+        case "FETCH_INFO_SUCCESS":
+            return Object.assign({},state, {info:action.response});
         default:
         	return state;  
     }

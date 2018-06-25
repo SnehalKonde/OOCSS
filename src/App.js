@@ -3,7 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import MenuView from './Components/MenuView.js';
 import { connect } from 'react-redux';
-import { getMenuItems , setMenuItems} from './actions/MenuItemAction.js';
+import { getMenuItems , setMenuItems, getGitHubAccountInfo} from './actions/MenuItemAction.js';
 import {bindActionCreators} from 'redux';
 
 class App extends Component {
@@ -17,6 +17,9 @@ class App extends Component {
   }
  componentWillReceiveProps(newProps) {
     debugger;
+  }
+  componentDidMount(){
+    this.props.getGitHubAccountInfo();
   }
   render() {
     return (
@@ -43,6 +46,7 @@ function mapDispatchToProps(dispatch){
   return{
     getMenuItems : bindActionCreators(getMenuItems,dispatch),
     setMenuItems : bindActionCreators(setMenuItems,dispatch), 
+    getGitHubAccountInfo: bindActionCreators(getGitHubAccountInfo,dispatch)
   }
 }
 
